@@ -41,7 +41,7 @@ WeatherCheck is a responsive web application that allows users to check the curr
 - Create a .env.local file in the root directory and add your API keys:
 OPENAI_API_KEY=your_openai_api_key
 
-- Go to weather.js file:
+- Go to the utils folder to find the weather.js file:
 Change the variable const API_KEY in line 3 to your_weatherapi_key
 
 4. ## Run the development server:
