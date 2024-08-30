@@ -63,6 +63,21 @@ export default function Home() {
     setInfoOpen(false);
   };
 
+  const getUniqueForecasts = (forecastList) => {
+    const uniqueForecasts = [];
+    const dateTracker = new Set();
+
+    forecastList.forEach((day) => {
+      const date = day.dt_txt.split(' ')[0]; // Extract the date part only
+      if (!dateTracker.has(date)) {
+        uniqueForecasts.push(day);
+        dateTracker.add(date);
+      }
+    });
+
+    return uniqueForecasts;
+  };
+
   return (
     <Box
       sx={{
@@ -151,7 +166,7 @@ export default function Home() {
         {/* Forecast Display */}
         {forecast && (
           <Grid container spacing={4} sx={{ mt: 4 }}>
-            {forecast.list.slice(0, 5).map((day, index) => (
+            {getUniqueForecasts(forecast.list).slice(0, 5).map((day, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card sx={{ backgroundColor: '#303f9f', color: '#ffffff' }}>
                   <CardContent>
