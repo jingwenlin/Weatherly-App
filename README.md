@@ -35,7 +35,7 @@ WeatherCheck is a responsive web application that allows users to check the curr
    cd weather-check
 2. ## Install dependencies:
 
-### Using npm: npm install
+- npm install
 
 3. ## Set up environment variables:
 - Create a .env.local file in the root directory and add your API keys:
