@@ -45,10 +45,10 @@ OPENAI_API_KEY=your_openai_api_key
 Change the variable const API_KEY in line 3 to your_weatherapi_key
 
 4. ## Run the development server:
-npm run dev
+- npm run dev
 
 5. ## Open the app:
-Open http://localhost:3000 in your browser to see the application in action.
+- Open http://localhost:3000 in your browser to see the application in action.
 
 # What I Did
 - **Weather Data Integration**: Integrated with the OpenWeatherMap API to fetch real-time weather data and a 5-day forecast based on the user's input or location.
