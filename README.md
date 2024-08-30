@@ -53,7 +53,7 @@ Open http://localhost:3000 in your browser to see the application in action.
 # What I Did
 - **Weather Data Integration**: Integrated with the OpenWeatherMap API to fetch real-time weather data and a 5-day forecast based on the user's input or location.
 
-- **Location Services**: Utilized the browser's geolocation API to retrieve the user's coordinates and fetch corresponding weather data. Used the Google Maps Geocoding API to get the city, state, and country details from the coordinates.
+- **Location Services**: Utilized the browser's geolocation API to retrieve the user's coordinates and fetch corresponding weather data. Used the Google Maps Geocoding API to get the city.
 
 - **AI-Generated Summaries**: Implemented an AI-powered weather summary feature using the OpenAI API to provide insightful and intelligent summaries of the current weather conditions.
 
