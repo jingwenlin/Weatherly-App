@@ -38,11 +38,11 @@ WeatherCheck is a responsive web application that allows users to check the curr
 ### Using npm: npm install
 
 3. ## Set up environment variables:
-Create a .env.local file in the root directory and add your API keys:
+- Create a .env.local file in the root directory and add your API keys:
+OPENAI_API_KEY=your_openai_api_key
 
-NEXT_PUBLIC_OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
-NEXT_PUBLIC_OPENAI_API_KEY=your_openai_api_key
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+- Go to weather.js file:
+Change the variable const API_KEY in line 3 to your_weatherapi_key
 
 4. ## Run the development server:
 npm run dev
