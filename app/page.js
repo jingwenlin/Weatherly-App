@@ -248,7 +248,7 @@ export default function Home() {
                   {/* Weather Details */}
                   <Grid item xs={12} sm={8}>
                     <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold' }}>
-                      {Math.round(weather.main.temp)}°C
+                      {Math.round(weather.main.temp)}°F
                     </Typography>
                     <Typography variant="body1" gutterBottom>
                       Feels like: {Math.round(weather.main.feels_like)}°C
@@ -320,7 +320,7 @@ export default function Home() {
                         />
                       </Box>
                       <Typography variant="h4" align="center" sx={{ fontWeight: 'bold' }}>
-                        {Math.round(day.main.temp)}°C
+                        {Math.round(day.main.temp)}°F
                       </Typography>
                       <Typography variant="body1" align="center" sx={{ fontStyle: 'italic', mb: 2 }}>
                         {day.weather[0].description}
